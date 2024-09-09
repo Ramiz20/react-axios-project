@@ -6,7 +6,7 @@ import "../Style/Style.scss";
 function AdminPanel() {
   const { id } = useParams();
   const [product, setProduct] = useState([]);
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(null);
 
   useEffect(() => {
     axios
